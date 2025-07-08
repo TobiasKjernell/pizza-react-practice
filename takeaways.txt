@@ -1,0 +1,2 @@
+trying another type of file-structure. keeping files relevant to folders.
+trying out the new routing system from react-router-dom. (createBrowserRouter)
