@@ -1,2 +1,7 @@
 trying another type of file-structure. keeping files relevant to folders.
-trying out the new routing system from react-router-dom. (createBrowserRouter)
+trying out the new routing system from react-router-dom. (createBrowserRouter).
+
+to fetch in router when you going to that page you need the 3 steps:
+1. use the 'loader' attribute in route.
+2. in your component that going to use the fetch. make a function with fetching ability and return the result.
+3. in your component, use a custom hook called 'useLoaderData()' which is provided by react-router-dom. 'const menu = useLoaderData();'
