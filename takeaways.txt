@@ -12,3 +12,11 @@ loader spinner: in appLayout.jsx we can use something called 'useNavigation'-cus
 it checks the current state of the page. So when we fetch it still loading the page etc: we click on a page link, it fetch and 
 current state will be in 'loading', when it's done loading => turns to 'idle'.
 Here we can render a spinner loader or any kind of visual loader.
+
+---- Error handling in routes:
+in your parent router, use the attribute: 'errorElement: <component />'.
+In your 'error'-component, use the customHook useRouteError() provdied by lib.
+useRouterError() receives a object with: data, error[message, stack], internalBool, status: 404/xxx, statusText: string.
+
+You can also put it inside the route with a 'loader' fetching if you want to keep it
+in it's own layout.
