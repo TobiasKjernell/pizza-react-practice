@@ -40,3 +40,7 @@ By using 'request.formData()' and then 'Object.fromEntries(formData)', we get ma
 We create a new object using existing data, overrite the variable we have to put new information in. 
 We can also return a 'redirect' from react routers when done.
 
+--- Error handling <Form /> information
+Make an object{}, make if/checks on each input, if any of these are wrong, fill the new object with it.
+As we return a redirect or this object is up to errors found.
+At the top we get the actionInfo sent ()
