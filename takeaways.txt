@@ -22,9 +22,21 @@ useRouterError() receives a object with: data, error[message, stack], internalBo
 You can also put it inside the route with a 'loader' fetching if you want to keep it
 in it's own layout.
 
----
+--- Params
 
 Getting params from 'loader'.
 React Route provides a object within the loader(params).
 etc: orderLoader({params})..
 very similiar to nextj.
+
+--- Writing data / post from router
+
+<Form /> provided by react has alot done for us. We use the attribute 'method' POST/PATCH/DELETE.
+In our route for this page there's a route attribute called: 'action'.
+This attribute listens on any submit and execute it's delegated function.
+In this delegated 'action', usually a async method. It provides some deconstructed variables we can use,
+in this case we use 'request'. 
+By using 'request.formData()' and then 'Object.fromEntries(formData)', we get make all the information into a object.
+We create a new object using existing data, overrite the variable we have to put new information in. 
+We can also return a 'redirect' from react routers when done.
+

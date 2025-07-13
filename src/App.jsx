@@ -3,7 +3,7 @@ import Home from "./ui/Home"
 import Menu, { menuLoader } from "./features/menu/Menu"
 import Cart from "./features/cart/Cart"
 import Order, { orderLoader } from "./features/order/Order"
-import CreateOrder from "./features/order/CreateOrder"
+import CreateOrder, {action as createOrder} from "./features/order/CreateOrder"
 import AppLayout from "./ui/appLayout"
 import Error from "./ui/Error"
 
@@ -33,7 +33,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/order/new',
-        element: <CreateOrder />
+        element: <CreateOrder />,
+        action: createOrder
       },
       {
         path: '/order/:orderId',
