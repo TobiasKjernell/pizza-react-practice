@@ -44,3 +44,12 @@ We can also return a 'redirect' from react routers when done.
 Make an object{}, make if/checks on each input, if any of these are wrong, fill the new object with it.
 As we return a redirect or this object is up to errors found.
 At the top we get the actionInfo sent ()
+
+--- Tailwind
+visit their homepage for install. 
+they have their own 'api' for all the classnames. classnames are built after normal css with different
+enchancement. 
+You don't need seperated files for css, you declare/write them in the class/classname attribute.
+It can be very messy overtime if you are not used to it.
+
+Tailwind is mobile first. 
