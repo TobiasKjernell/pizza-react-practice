@@ -53,3 +53,17 @@ You don't need seperated files for css, you declare/write them in the class/clas
 It can be very messy overtime if you are not used to it.
 
 Tailwind is mobile first. 
+
+@layer component {
+    .class {
+        @apply <tailwind styles>
+    }
+}
+This is a way to reause a class with tailwind-styles.
+If you have component with html that needs same class-styles. 
+Save to variable and put it into className="".
+
+To create custom variables or overrite: 
+@theme {
+    --varName: value
+}
