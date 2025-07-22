@@ -11,7 +11,7 @@ const AppLayout = () => {
             {isLoading && <Loader />}
             <Header />
             <div className="overflow-auto">
-                <main class="overflow-auto max-w-3xl mx-auto">
+                <main className="overflow-auto max-w-3xl mx-auto">
                     <Outlet />
                 </main>
             </div>
